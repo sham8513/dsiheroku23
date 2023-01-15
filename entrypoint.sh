@@ -23,12 +23,12 @@ cat << EOF > /etc/xray/config.json
     "inbounds": [
         {
             "listen": "0.0.0.0",
-            "port": 9000,
-            "protocol": "vmess",
+            "port": $PORT,
+            "protocol": "$PROTOCOL",
             "settings": {
                 "clients": [
                     {
-                        "id": "5e07bf3b-9e14-4c34-b9df-13110b73c466"
+                        "id": "$UUID"
                     }
                 ]
             },
